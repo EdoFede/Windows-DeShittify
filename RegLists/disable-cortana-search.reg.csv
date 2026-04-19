@@ -1,7 +1,3 @@
-# Disable Cortana and search web integration
-#
-# Format: Action | Key | Value | Type | Data
-
 # Disable Cortana via policy
 ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search | AllowCortana | REG_DWORD | 0
 

@@ -1,7 +1,3 @@
-# Disable OneDrive integration
-#
-# Format: Action | Key | Value | Type | Data
-
 # Disable OneDrive file sync
 ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive | DisableFileSyncNGSC | REG_DWORD | 1
 

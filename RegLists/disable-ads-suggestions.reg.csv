@@ -1,7 +1,3 @@
-# Disable ads, suggestions, and content delivery
-#
-# Format: Action | Key | Value | Type | Data
-
 # Disable content delivery
 ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | ContentDeliveryAllowed | REG_DWORD | 0
 

@@ -1,14 +1,3 @@
-# Disable telemetry, advertising, and data collection
-#
-# Format: Action | Key | Value | Type | Data
-#   Action: ADD or DELETE
-#   Key:    Registry key path
-#   Value:  Value name (leave empty for DELETE of entire key)
-#   Type:   REG_DWORD, REG_SZ, REG_EXPAND_SZ, REG_QWORD (ignored for DELETE)
-#   Data:   Value data (ignored for DELETE)
-#
-# Fields are separated by " | " (pipe with surrounding spaces)
-
 # Disable telemetry data collection
 ADD | HKLM\Software\Policies\Microsoft\Windows\DataCollection | AllowTelemetry | REG_DWORD | 0
 

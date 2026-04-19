@@ -1,0 +1,13 @@
+# Microsoft programs to remove
+#
+# Format: Method | Name/Command
+#   Method: WINGET, PACKAGE, CIM, CUSTOM
+#   Name:   Program identifier (or full command for CUSTOM)
+#
+# Methods:
+#   WINGET  - uses "winget uninstall <name>"
+#   PACKAGE - uses Get-Package / Uninstall-Package (PackageManagement)
+#   CIM     - uses CIM/WMI Win32_Product to uninstall
+#   CUSTOM  - runs the provided command as-is
+#
+# Fields are separated by " | " (pipe with surrounding spaces)

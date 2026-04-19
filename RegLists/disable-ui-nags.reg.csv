@@ -1,7 +1,3 @@
-# Disable UI nags, tips, and unwanted prompts
-#
-# Format: Action | Key | Value | Type | Data
-
 # Disable Edge help sticker overlay
 ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\EdgeUI | DisableHelpSticker | REG_DWORD | 1
 
