@@ -1,0 +1,12 @@
+# Microsoft apps (standalone Microsoft products)
+
+*Office.OneNote*
+Microsoft.Messaging*
+Microsoft.Outlook*
+Microsoft.Todos*
+Microsoft.Xbox*
+Microsoft.YourPhone*
+Microsoft.Zune*
+MicrosoftOfficeHub*
+MicrosoftStickyNotes*
+MSTeams*

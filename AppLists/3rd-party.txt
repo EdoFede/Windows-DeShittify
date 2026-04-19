@@ -1,0 +1,19 @@
+# 3rd party apps (non-Microsoft)
+
+*Amazon*
+*AutodeskSketchBook*
+*BubbleWitch*
+*CandyCrush*
+*DisneyMagicKingdoms*
+*dynabookSupportUtility*
+*Facebook*
+*Fitbit*
+*Houzz*
+*MarchofEmpires*
+*Phototastic*
+*RealtekAudioControl*
+*RoyalRevolt*
+*Spotify*
+*TOSHIBAManual*
+*Twitter*
+Clipchamp.Clipchamp*

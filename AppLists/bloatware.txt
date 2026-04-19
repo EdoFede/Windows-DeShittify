@@ -1,0 +1,21 @@
+# Bloatware (ads, promotions, unwanted preinstalled junk)
+
+*3DBuilder*
+*Advertising.Xaml*
+*MinecraftUWP*
+*MixedReality.Portal*
+*OneConnect*
+*Print3D*
+*Wallet*
+*Windows.MiracastView*
+Microsoft.Bing*
+Microsoft.Edge.GameAssist*
+Microsoft.GamingApp*
+Microsoft.GetHelp*
+Microsoft.Getstarted*
+Microsoft.MicrosoftSolitaireCollection*
+Microsoft.StartExperiencesApp*
+Microsoft.WidgetsPlatformRuntime*
+Microsoft3DViewer*
+MicrosoftWindows.Client.WebExperience*
+MicrosoftWindows.CrossDevice*

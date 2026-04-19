@@ -1,0 +1,9 @@
+# Windows built-in apps
+
+Microsoft.Windows.People*
+Microsoft.Windows.Photos*
+Microsoft.WindowsAlarms*
+Microsoft.WindowsCamera*
+Microsoft.windowscommunicationsapps*
+Microsoft.WindowsFeedbackHub*
+Microsoft.WindowsSoundRecorder*
