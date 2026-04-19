@@ -1,6 +1,6 @@
 # Windows built-in apps
 
-Microsoft.Windows.People*
+Microsoft.Windows.PeopleExperienceHost
 Microsoft.Windows.Photos*
 Microsoft.WindowsAlarms*
 Microsoft.WindowsCamera*
