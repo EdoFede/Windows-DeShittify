@@ -9,7 +9,7 @@ PowerShell tools to clean up a fresh Windows 11 install. Strips bloatware, OEM j
 - Cleans up leftover shortcuts and OEM software (WinZip, etc.)
 
 ## Reference
-- `Win 11 - Pulizia.md` — original manual command sequence (Italian), used as the basis for building proper scripts
+- `[OLD] Win 11 - Pulizia.md` — original manual command sequence (Italian), used as the basis for building proper scripts
 - `README.md` — user-facing prerequisites and usage instructions
 
 ## Notes
