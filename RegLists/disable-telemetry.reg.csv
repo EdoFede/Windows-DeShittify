@@ -1,0 +1,34 @@
+# Disable telemetry, advertising, and data collection
+#
+# Format: Action | Key | Value | Type | Data
+#   Action: ADD or DELETE
+#   Key:    Registry key path
+#   Value:  Value name (leave empty for DELETE of entire key)
+#   Type:   REG_DWORD, REG_SZ, REG_EXPAND_SZ, REG_QWORD (ignored for DELETE)
+#   Data:   Value data (ignored for DELETE)
+#
+# Fields are separated by " | " (pipe with surrounding spaces)
+
+# Disable telemetry data collection
+ADD | HKLM\Software\Policies\Microsoft\Windows\DataCollection | AllowTelemetry | REG_DWORD | 0
+
+# Prevent device metadata retrieval from the internet
+ADD | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata | PreventDeviceMetadataFromNetwork | REG_DWORD | 1
+
+# Disable Malicious Software Removal Tool offering via Windows Update
+ADD | HKLM\SOFTWARE\Policies\Microsoft\MRT | DontOfferThroughWUAU | REG_DWORD | 1
+
+# Disable Customer Experience Improvement Program
+ADD | HKLM\SOFTWARE\Policies\Microsoft\SQMClient\Windows | CEIPEnable | REG_DWORD | 0
+
+# Disable Application Impact Telemetry
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat | AITEnable | REG_DWORD | 0
+
+# Prevent apps from accessing account info
+ADD | HKLM\Software\Policies\Microsoft\Windows\AppPrivacy | LetAppsAccessAccountInfo | REG_DWORD | 2
+
+# Disable advertising ID
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo | Enabled | REG_DWORD | 0
+
+# Disable SmartScreen web content evaluation
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\AppHost | EnableWebContentEvaluation | REG_DWORD | 0

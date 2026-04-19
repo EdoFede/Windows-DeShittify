@@ -1,0 +1,15 @@
+# Disable OneDrive integration
+#
+# Format: Action | Key | Value | Type | Data
+
+# Disable OneDrive file sync
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive | DisableFileSyncNGSC | REG_DWORD | 1
+
+# Disable OneDrive sync on metered networks
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive | DisableMeteredNetworkFileSync | REG_DWORD | 1
+
+# Prevent OneDrive network traffic before user sign-in
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive | PreventNetworkTrafficPreUserSignIn | REG_DWORD | 1
+
+# Hide sync provider notifications in Explorer
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced | ShowSyncProviderNotifications | REG_DWORD | 0

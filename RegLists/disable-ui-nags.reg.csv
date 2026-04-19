@@ -1,0 +1,12 @@
+# Disable UI nags, tips, and unwanted prompts
+#
+# Format: Action | Key | Value | Type | Data
+
+# Disable Edge help sticker overlay
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\EdgeUI | DisableHelpSticker | REG_DWORD | 1
+
+# Hide People bar from taskbar
+ADD | HKCU\Software\Policies\Microsoft\Windows\Explorer | HidePeopleBar | REG_DWORD | 1
+
+# Disable automatic app downloads from Windows Store
+ADD | HKCU\Software\Policies\Microsoft\WindowsStore | AutoDownload | REG_DWORD | 2

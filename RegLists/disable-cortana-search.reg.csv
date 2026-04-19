@@ -1,0 +1,21 @@
+# Disable Cortana and search web integration
+#
+# Format: Action | Key | Value | Type | Data
+
+# Disable Cortana via policy
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search | AllowCortana | REG_DWORD | 0
+
+# Disable web results in search
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search | ConnectedSearchUseWeb | REG_DWORD | 0
+
+# Disable Cortana for current user
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\Search | CortanaEnabled | REG_DWORD | 0
+
+# Hide search box from taskbar
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\Search | SearchboxTaskbarMode | REG_DWORD | 0
+
+# Disable Bing search integration
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\Search | BingSearchEnabled | REG_DWORD | 0
+
+# Disable device history in search
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\Search | DeviceHistoryEnabled | REG_DWORD | 0

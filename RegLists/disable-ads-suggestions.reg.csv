@@ -1,0 +1,42 @@
+# Disable ads, suggestions, and content delivery
+#
+# Format: Action | Key | Value | Type | Data
+
+# Disable content delivery
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | ContentDeliveryAllowed | REG_DWORD | 0
+
+# Disable OEM preinstalled apps
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | OemPreInstalledAppsEnabled | REG_DWORD | 0
+
+# Disable preinstalled apps
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | PreInstalledAppsEnabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | PreInstalledAppsEverEnabled | REG_DWORD | 0
+
+# Disable silent app installs
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SilentInstalledAppsEnabled | REG_DWORD | 0
+
+# Disable soft landing (tips and suggestions)
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SoftLandingEnabled | REG_DWORD | 0
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent | DisableSoftLanding | REG_DWORD | 1
+
+# Disable Windows consumer features (suggested apps in Start menu)
+ADD | HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent | DisableWindowsConsumerFeatures | REG_DWORD | 1
+
+# Disable subscribed / sponsored content
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SubscribedContentEnabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SubscribedContent-338388Enabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SubscribedContent-338389Enabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SubscribedContent-353696Enabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SubscribedContent-88000326Enabled | REG_DWORD | 0
+
+# Disable Start menu suggestions
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SystemPaneSuggestionsEnabled | REG_DWORD | 0
+
+# Disable lock screen spotlight and slideshow
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | RotatingLockScreenEnabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | RotatingLockScreenOverlayEnabled | REG_DWORD | 0
+ADD | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager | SlideshowEnabled | REG_DWORD | 0
+
+# Remove existing subscriptions and suggested apps data
+DELETE | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\Subscriptions
+DELETE | HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SuggestedApps
